@@ -17,6 +17,7 @@ def verify_heading(context):
     heading = context.browser.find_element_by_class_name("page-header-title.clr").is_displayed()
     assert heading is True
 
+
 @then('Close browser')
 def close_browser(context):
     context.browser.close()
